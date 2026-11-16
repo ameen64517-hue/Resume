@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ameen Clarice | Software Engineering Student</title>
+<meta name="description" content="Online resume of Ameen Clarice, final-year Software Engineering student.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#home" class="logo">AC<span>.</span></a>
+  <button id="menuBtn" class="icon-btn menu" aria-label="Toggle menu">☰</button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
+    <a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+  </nav>
+  <button id="themeBtn" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <p class="eyebrow">Hello, I'm</p>
+  <h1>Ameen Clarice</h1>
+  <p class="role">Software Engineering Student · <span id="typed"></span></p>
+  <p class="lead">I turn ideas into clean, working software. With a strong hand in Python, solid web development skills and a project-manager's eye for planning, I enjoy building things that actually help people.</p>
+  <div class="cta">
+    <a class="btn" href="#projects">View my work</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <p>I'm a final-year Software Engineering student who loves the full journey of a product: planning it, designing it, and coding it. Python is my strongest tool, and I pair it with web development and software project management to deliver organised, user-focused work. Right now I'm bringing all of these skills together in my Final Year Project, a blood bank application.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>BS Software Engineering</h3>
+    <p class="muted">Faculty of Engineering Sciences and Technology · Final year (in progress)</p>
+    <p>Coursework and projects across programming, web engineering and software project management.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical skills</h2>
+  <p class="muted">Click a category to filter.</p>
+  <div class="filters" id="filters">
+    <button class="chip active" data-f="all">All</button>
+    <button class="chip" data-f="code">Programming</button>
+    <button class="chip" data-f="web">Web</button>
+    <button class="chip" data-f="mgmt">Management</button>
+    <button class="chip" data-f="creative">Creative &amp; AI</button>
+  </div>
+  <div class="skills" id="skillList">
+    <div class="skill" data-c="code"><div class="row"><b>Python</b><span>Strong</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+    <div class="skill" data-c="web"><div class="row"><b>Web Development (HTML, CSS, JavaScript)</b><span>Good</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+    <div class="skill" data-c="mgmt"><div class="row"><b>Software Project Management</b><span>Good</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+    <div class="skill" data-c="creative"><div class="row"><b>Video Editing &amp; Animation</b><span>Certified</span></div><div class="bar"><i style="--w:70%"></i></div></div>
+    <div class="skill" data-c="creative"><div class="row"><b>AI Prompting</b><span>Certified</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card featured">
+    <span class="tag">Final Year Project · In progress</span>
+    <h3>Blood Bank App</h3>
+    <p>An application that connects blood donors, patients and blood banks. It brings together everything I've learned: Python for the logic, web development for the interface and software project management to plan and deliver it.</p>
+    <div class="tags"><span>Python</span><span>Web Development</span><span>Project Management</span></div>
+  </div>
+</section>
+
+<section id="certs">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card"><h3>🎬 Video Editing &amp; Animation</h3><p class="muted">Certificate</p></div>
+    <div class="card"><h3>🤖 AI Prompting</h3><p class="muted">Certificate</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Open to internships, collaborations and new opportunities.</p>
+  <div class="grid">
+    <div class="card"><h3>✉️ Email</h3><p><a href="mailto:ameenclarice@gmail.com">ameenclarice@gmail.com</a></p><button class="btn small" id="copyBtn">Copy email</button></div>
+    <div class="card"><h3>📞 Phone</h3><p><a href="tel:+923408300434">0340 8300434</a></p></div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Ameen Clarice</footer>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
